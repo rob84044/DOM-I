@@ -37,114 +37,131 @@ const siteContent = {
   },
 };
 
-//Example: Update the img src for the logo
-
+// Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// let headerImg = document.getElementById("cta-img");
-// headerImg.setAttribute("src", "img/header-img.png");
+// Navigation menu
 
-
-
-
-
-//nav
+//First Nav Item
 let services = document.getElementsByTagName('a')[0];
-services.innerText = siteContent['nav']['nav-item-1'];
-
-//===================== Both ways below worked==================================
-
-//let product = document.getElementsByTagName('a')[1];
-//product.innerHTML = 'Product';
-
-//let product = document.getElementsByTagName('a')[1];
-//product.innerText = siteContent['nav']['nav-item-2'];
-
-//===============================================================================
-
+services.innerText = siteContent['nav']['nav-item-1']
+services.style.color ='green';
+//second Nav Item
 let product = document.getElementsByTagName('a')[1];
-product.innerText = siteContent['nav']['nav-item-2'];
-
+product.innerText = siteContent['nav']['nav-item-2']
+product.style.color ='green';
+//Third Nav Item
 let vision = document.getElementsByTagName('a')[2];
-vision.innerText = siteContent['nav']['nav-item-3'];
-
+vision.innerText = siteContent['nav']['nav-item-3']
+vision.style.color ='green';
+//Fourth Nav Item
 let features = document.getElementsByTagName('a')[3];
-features.innerText = siteContent['nav']['nav-item-4'];
-
+features.innerText = siteContent['nav']['nav-item-4']
+features.style.color ='green';
+//Fifth Nav Item
 let about = document.getElementsByTagName('a')[4];
-about.innerText = siteContent['nav']['nav-item-5'];
-
+about.innerText = siteContent['nav']['nav-item-5']
+about.style.color ='green';
+//Sixth Nav Item
 let contact = document.getElementsByTagName('a')[5];
 contact.innerText = siteContent['nav']['nav-item-6'];
+contact.style.color ='green';
 
-// cta
 
-let h1_ = document.getElementsByTagName('h1')[0];
-h1_.innerText = siteContent['cta']['h1'];
 
-let button = document.getElementsByTagName("button")[0];
-button.innerText = siteContent['cta']['button'];
 
-let headerImg = document.getElementById("cta-img");
-headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
+//Call to action area
+// CTA H1
+let ctaH1 = document.getElementsByTagName('h1')[0];
+ctaH1.innerText = siteContent['cta']['h1'];
+// CTA Button
+let ctaBtn = document.getElementsByTagName('button')[0];
+ctaBtn.innerText = siteContent['cta']['button'];
+// CTA Image
+let ctaImg = document.getElementsByTagName('img')[1];
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
-let middleImg = document.getElementById("middle-img");
-middleImg.setAttribute("src", "img/mid-page-accent.jpg")
+//Features and about section
 
-// main-content
+// Features section
+// Features H4
+let featH4 = document.getElementsByTagName('h4')[0];
+featH4.innerText = siteContent['main-content']['features-h4'];
+//Features P
+let featP = document.getElementsByTagName('p')[0];
+featP.innerText = siteContent['main-content']['features-content'];
 
-let featuresH4 = document.getElementsByTagName('h4')[0];
-featuresH4.innerText = siteContent['main-content']['features-h4'];
+// About section
+// About H4
+let aboutH4 = document.getElementsByTagName('h4')[1];
+aboutH4.innerText = siteContent['main-content']['features-h4'];
+//About P
+let aboutP = document.getElementsByTagName('p')[1];
+aboutP.innerText = siteContent['main-content']['about-content'];
 
-let featuresContent = document.getElementsByTagName('p')[0];
-featuresContent.innerText = siteContent['main-content']['features-content'];
+// Dividing Image 
+let middleImg = document.getElementsByTagName('img')[2];
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-let about_H4 = document.getElementsByTagName('h4')[1];
-about_H4.innerText = siteContent['main-content']['about-h4'];
+//Services, Product, and Vision section
 
-let aboutContent_1 = document.getElementsByTagName('p')[1];
-aboutContent_1.innerText = siteContent['main-content']['about-content'];
+// Services section
+// Services H4
+let servicesH4 = document.getElementsByTagName('h4')[2];
+servicesH4.innerText = siteContent['main-content']['services-h4'];
+//Services P
+let servicesP = document.getElementsByTagName('p')[2];
+servicesP.innerText = siteContent['main-content']['services-content'];
 
-let services_H4 = document.getElementsByTagName('h4')[2];
-services_H4.innerText = siteContent['main-content']['services-h4'];
+// Product section
+// Product H4
+let productH4 = document.getElementsByTagName('h4')[3];
+productH4.innerText = siteContent['main-content']['product-h4'];
+//Product P
+let productP = document.getElementsByTagName('p')[3];
+productP.innerText = siteContent['main-content']['product-content'];
 
-let servicesContent = document.getElementsByTagName('p')[2];
-servicesContent.innerText = siteContent['main-content']['services-content'];
+// Vision section
+// Vision H4
+let visionH4 = document.getElementsByTagName('h4')[4];
+visionH4.innerText = siteContent['main-content']['vision-h4'];
+//Vision P
+let visionP = document.getElementsByTagName('p')[4];
+visionP.innerText = siteContent['main-content']['vision-content'];
 
-let product_H4 = document.getElementsByTagName('h4')[3];
-product_H4.innerText = siteContent['main-content']['product-h4'];
 
-let productContent = document.getElementsByTagName('p')[3];
-productContent.innerText = siteContent['main-content']['product-content'];
+// Contact portion of the page
+let contactH4 = document.getElementsByTagName('h4')[5];
+contactH4.innerText = siteContent['contact']['contact-h4'];
 
-let vision_H4 = document.getElementsByTagName('h4')[4];
-vision_H4.innerText = siteContent['main-content']['vision-h4'];
-
-let visionContent = document.getElementsByTagName('p')[4];
-visionContent.innerText = siteContent['main-content']['vision-content'];
-
-// Contact
-
-let contact_H4 = document.getElementsByTagName('h4')[5];
-contact_H4.innerText = siteContent['contact']['contact-h4'];
 let address = document.getElementsByTagName('p')[5];
 address.innerText = siteContent['contact']['address'];
+
 let phone = document.getElementsByTagName('p')[6];
 phone.innerText = siteContent['contact']['phone'];
+
 let email = document.getElementsByTagName('p')[7];
 email.innerText = siteContent['contact']['email'];
 
-//footer
-let footer = document.getElementsByTagName('p')[8];
-footer.innerText = siteContent['footer']['copyright'];
+// Footer portion of the page
 
- //let aTags = document.querySelectorAll("a");
-// let i;
-// for (i = 0; i < aTags.length; i++) {
-//   aTags[i].style.color = "red";
-// }
+let copyright = document.getElementsByTagName('p')[8];
+copyright.innerText = siteContent['footer']['copyright'];
 
-// aTags.forEach(element => {
-//   element.style.color = 'blue';
-// });
+
+//Extra Nav Items
+let nav = document.querySelector('nav')
+
+let shop = document.createElement('a');
+shop.innerText = "Shopping";
+shop.style.color ='green';
+shop.setAttribute('href', '#')
+nav.appendChild(shop);
+
+let account = document.createElement('a');
+account.innerText = "Account";
+account.style.color ='green';
+account.setAttribute('href', '#')
+nav.prepend(account);
+
